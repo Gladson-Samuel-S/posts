@@ -5,7 +5,7 @@ import { rootLoader, postLoader } from "./loaders/loaders";
 import { createAction } from "./actions/Actions";
 
 import App from "./App";
-import Index from "./pages/index";
+import Index from "./pages/Index";
 import Post from "./pages/Post";
 import CreatePost from "./pages/CreatePost";
 

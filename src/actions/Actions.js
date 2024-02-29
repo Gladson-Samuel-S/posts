@@ -1,20 +1,19 @@
-const BASE_URL = 'https://jsonplaceholder.typicode.com/';
-import { redirect } from 'react-router-dom';
+const BASE_URL = "https://jsonplaceholder.typicode.com/";
+import { redirect } from "react-router-dom";
 
 export async function createPost(payload) {
   const response = await fetch(`${BASE_URL}posts`, {
-    method: 'POST',
+    method: "POST",
     body: JSON.stringify(payload),
   });
 
   return response;
 }
 
-export async function createAction({ request, action }) {
+export async function createAction({ request }) {
   const formData = await request.formData();
   const updates = Object.fromEntries(formData);
-  const response = await createPost(updates);
-  const { id } = await response.json();
+  await createPost(updates);
 
-  return redirect('/');
+  return redirect("/");
 }

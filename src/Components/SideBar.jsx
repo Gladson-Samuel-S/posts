@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+/* eslint-disable react/prop-types */
+import { Link, NavLink } from "react-router-dom";
 
 const SideBar = ({ posts }) => (
   <aside className="sidebar">
@@ -17,7 +17,7 @@ const SideBar = ({ posts }) => (
           <NavLink
             key={id}
             className={({ isActive }) =>
-              isActive ? 'post-link-container active' : 'post-link-container'
+              isActive ? "post-link-container active" : "post-link-container"
             }
             to={`posts/${id}`}
           >

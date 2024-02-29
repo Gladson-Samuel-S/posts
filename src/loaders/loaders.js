@@ -1,5 +1,5 @@
-const BASE_URL = 'https://jsonplaceholder.typicode.com/';
-const POSTS_FETCH_LIMIT = 3;
+const BASE_URL = "https://jsonplaceholder.typicode.com/";
+const POSTS_FETCH_LIMIT = 10;
 
 export async function getPosts() {
   const response = await fetch(`${BASE_URL}posts?_limit=${POSTS_FETCH_LIMIT}`);

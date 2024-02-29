@@ -1,8 +1,11 @@
-# React + Vite
+# react-router Post
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- createBrowserRouter
+- [path, element, loader, action, errorElement]
+- loader (Generally GET call for that particular route)
+  - useLoaderData()
+  - useNavigation() navigation.state (loading, idle, submitting)
+- action (Generally POST, PATCH, PUT, DELETE for that particular route)
+- <Outlet> placeholder for child route elements or allows nested UI for child routes
+- <NavLink> Allows client side routing with ({ isActive, isPending })
+- <Link> Allows client side routing
